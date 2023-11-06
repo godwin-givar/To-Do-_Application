@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <!--Title box -->
+        <div class="title">
+            <h2>To-Do Application</h2>
+        </div>
+        <!-- ToDo Container -->
+        <div class="todo-container">
+            <input type="text" name="add_task" id="add_task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <!-- Taskboard -->
+        <div class="taskboard_container">
+            <table>
+                <caption>Taskboard</caption>
+                <thead>
+                    <tr class="table-heading">
+                        <th>To-Do Tasks</th>
+                        <th>Remove Task</th>
+                    </tr>
+                </thead>
+                <tbody id="display_task">
+                    <!--<tr>
+                        <td>Create structure for todo app</td>
+                        <td><button>X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Create structure for todo app</td>
+                        <td><button>X</button></td>
+                    </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- javascript-->
+    <script src="./todo.js" type="text/javascript"></script>
+</body>
+</html>
